@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Plan - Reservation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">
+      <h1>Let's Plan</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Reservation Form Section -->
+  <section class="reservation-form">
+    <h2>Make Your Reservation</h2>
+
+    <form id="reservationForm">
+      <!-- Restaurant Name (pre-filled) -->
+      <div class="form-group">
+        <label for="restaurantName">Restaurant:</label>
+        <input type="text" id="restaurantName" value="Moonlit Terrace" readonly>
+      </div>
+
+      <!-- Date Selection -->
+      <div class="form-group">
+        <label for="reservationDate">Date:</label>
+        <input type="date" id="reservationDate" required>
+      </div>
+
+      <!-- Time Selection -->
+      <div class="form-group">
+        <label for="reservationTime">Time:</label>
+        <input type="time" id="reservationTime" required>
+      </div>
+
+      <!-- Name Input -->
+      <div class="form-group">
+        <label for="customerName">Name:</label>
+        <input type="text" id="customerName" placeholder="Your Full Name" required>
+      </div>
+
+      <!-- Phone Number Input -->
+      <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="tel" id="phoneNumber" placeholder="Your Phone Number" required>
+      </div>
+
+      <!-- Email Input -->
+      <div class="form-group">
+        <label for="emailAddress">Email:</label>
+        <input type="email" id="emailAddress" placeholder="Your Email" required>
+      </div>
+
+      <!-- Special Instructions -->
+      <div class="form-group">
+        <label for="specialInstructions">Special Instructions (optional):</label>
+        <textarea id="specialInstructions" rows="4" placeholder="Any special requests or instructions"></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Submit Reservation</button>
+    </form>
+
+    <!-- Confirmation Message -->
+    <div id="confirmationMessage" class="confirmation-message" style="display: none;">
+      <h3>Thank you for your reservation!</h3>
+      <p>We have received your reservation request and will contact you soon.</p>
+    </div>
+
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+     

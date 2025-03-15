@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Let's Plan - Lunch</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="logo">
+      <h1>Let's Plan</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Reservations</a></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Banner Section -->
+  <section class="banner">
+    <h2>Find the best lunch spots near you</h2>
+  </section>
+
+  <!-- Restaurant Listings -->
+  <section class="restaurant-listings">
+    <div class="search-filter">
+      <input type="text" id="search" placeholder="Search for a restaurant...">
+    </div>
+
+    <div class="restaurants">
+      <div class="restaurant-card">
+        <img src="restaurant1.jpg" alt="Restaurant 1">
+        <h3>Sunny Cafe</h3>
+        <p>Location: Downtown</p>
+        <p>Rating: 4.5/5</p>
+        <button onclick="makeReservation()">Make a Reservation</button>
+      </div>
+      <div class="restaurant-card">
+        <img src="restaurant2.jpg" alt="Restaurant 2">
+        <h3>City Bistro</h3>
+        <p>Location: Uptown</p>
+        <p>Rating: 4.2/5</p>
+        <button onclick="makeReservation()">Make a Reservation</button>
+      </div>
+      <!-- Add more restaurant cards here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Let's Plan. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
